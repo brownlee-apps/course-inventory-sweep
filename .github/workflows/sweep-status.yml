@@ -1,0 +1,52 @@
+# Course status for the Course Inventory Sweep, read from Jotform every 15 minutes.
+# It writes live_status.json beside index.html when any course's status changes, commits it, and asks GitHub Pages
+# to rebuild (a commit pushed with GITHUB_TOKEN does not start a Pages build by itself).
+# The Jotform key lives in the repository secret JOTFORM_API_KEY, read access only. Logs are public, so the script
+# prints counts only. Run it by hand from the Actions tab; Dry run includes Test Runs and writes nothing.
+name: Sweep status from Jotform
+
+on:
+  schedule:
+    - cron: "4,19,34,49 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run: include Jotform Test Runs, print counts, write nothing"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: sweep-status
+  cancel-in-progress: false
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read course status from Jotform
+        id: fetch
+        env:
+          JOTFORM_API_KEY: ${{ secrets.JOTFORM_API_KEY }}
+          DRY_RUN: ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: python3 .github/sweep-status/fetch_status.py --courses .github/sweep-status/courses.txt --out live_status.json $DRY_RUN
+
+      - name: Commit and publish
+        if: steps.fetch.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add live_status.json
+          git commit -q -m "Course status from Jotform"
+          git pull -q --rebase origin main
+          git push -q origin HEAD:main
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" --silent
+          echo "Committed live_status.json and asked Pages to rebuild."
