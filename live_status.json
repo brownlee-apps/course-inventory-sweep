@@ -1,9 +1,17 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-10-30T15:33:36Z",
+ "changed": "2026-10-30T16:24:02Z",
  "courses": {
   "ALHT102": {
+   "status": "banner",
+   "submitted": "2026-10-30"
+  },
+  "ALHT102L": {
    "status": "dean",
+   "submitted": "2026-10-30"
+  },
+  "ALHT209": {
+   "status": "banner",
    "submitted": "2026-10-30"
   },
   "VTAH111": {
@@ -11,15 +19,15 @@
    "submitted": "2026-10-30"
   },
   "VTAH112": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-10-30"
   },
   "VTAH217": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-10-30"
   },
   "VTAH218": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-10-30"
   }
  }
