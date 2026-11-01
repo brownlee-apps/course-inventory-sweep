@@ -9,8 +9,10 @@ The workflow in Jotform writes where each submission is waiting into the hidden 
 with Update Value elements: Dean (the default), Banner (a Dean approved it), Degree Works, Catalog, Complete, and
 Returned (a Dean denied it). Anything else, a blank included, counts as received and in process.
 
-What leaves Jotform: only each course's record ID, the date its newest report was submitted, and its Status.
-The repository and its logs are public, so the script prints counts only. It skips Workflow Test Runs, anything not
+What leaves Jotform: only each course's record ID, the date its newest report was submitted, its Status, and its
+submission ID (course, disposition, and when the report was saved, such as MATH102_Updated_20261029_101530), read from
+the PDF File Name question, or from the uploaded PDF's name when that answer does not fit the pattern (since
+November 1, 2026). The repository and its logs are public, so the script prints counts only. It skips Workflow Test Runs, anything not
 among the Sweep's courses (courses.txt), and every submission that is not active.
 
 Usage:
@@ -104,6 +106,34 @@ def norm_status(v):
     return STATUS_MAP.get(re.sub(r"[^a-z]", "", (v or "").lower()), "received")
 
 
+# The submission ID the Sweep gives each report (MATH102_Updated_20261029_101530), matched as the Sweep matches it:
+# a .pdf ending, quotes, spaces, and letter case forgiven
+SUB_ID_RE = re.compile(r"^([A-Z]{2,5}\d{2,4}[A-Z]?)_(CONFIRMED|UPDATED|RETIRED)_(\d{8})_(\d{6})$")
+
+
+def norm_sub_id(s):
+    s = urllib.parse.unquote(s or "").strip().strip("\"'")
+    s = re.sub(r"\.pdf$", "", s, flags=re.I)
+    m = SUB_ID_RE.match(re.sub(r"\s+", "", s).upper())
+    return f"{m[1]}_{m[2].title()}_{m[3]}_{m[4]}" if m else None
+
+
+def sub_id(sub, cid):
+    """The report's submission ID for course cid: the PDF File Name answer, else the uploaded PDF's name, else None."""
+    tries = [answer(sub, PDF_Q, PDF_NAMES)]
+    for a in (sub.get("answers") or {}).values():
+        if a.get("type") == "control_fileupload":
+            v = a.get("answer")
+            for url in (v if isinstance(v, list) else [v] if isinstance(v, str) else []):
+                if isinstance(url, str) and url.lower().endswith(".pdf"):
+                    tries.append(url.rsplit("/", 1)[-1])
+    for t in tries:
+        sid = norm_sub_id(t)
+        if sid and sid.split("_")[0] == cid:
+            return sid
+    return None
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--courses", required=True)
@@ -141,13 +171,19 @@ def main():
         when = str(s.get("created_at", ""))
         rank = (when, str(s.get("id", "")))
         if cid not in newest or rank > newest[cid][0]:
-            newest[cid] = (rank, {"status": norm_status(answer(s, STATUS_Q, STATUS_NAMES)), "submitted": when[:10]})
+            entry = {"status": norm_status(answer(s, STATUS_Q, STATUS_NAMES)), "submitted": when[:10]}
+            sid = sub_id(s, cid)
+            if sid:
+                entry["id"] = sid
+            newest[cid] = (rank, entry)
     courses = {cid: newest[cid][1] for cid in sorted(newest)}
     by_status = Counter(v["status"] for v in courses.values())
+    with_id = sum(1 for v in courses.values() if v.get("id"))
 
     print(f"Submissions read: {seen['read']}. Skipped: {seen['test runs']} Test Run(s){' (counted in this dry run)' if args.dry_run else ''}, "
           f"{seen['not a Sweep course']} not a Sweep course, {seen['not active']} not active.")
     print(f"Courses with a status: {len(courses)} of {len(known)}. " + ", ".join(f"{s} {by_status[s]}" for s in STATUSES if by_status[s]))
+    print(f"Courses with a submission ID: {with_id} of {len(courses)}.")
 
     if args.dry_run:
         print("Dry run: nothing written.")
