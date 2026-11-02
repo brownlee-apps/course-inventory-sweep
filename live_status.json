@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-01T16:03:58Z",
+ "changed": "2026-11-02T12:24:56Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -53,22 +53,22 @@
    "id": "RLGN203_Updated_20261030_141608"
   },
   "VTAH111": {
-   "status": "degreeworks",
+   "status": "complete",
    "submitted": "2026-10-30",
    "id": "VTAH111_Retired_20261030_095905"
   },
   "VTAH112": {
-   "status": "degreeworks",
+   "status": "complete",
    "submitted": "2026-10-30",
    "id": "VTAH112_Retired_20261030_101603"
   },
   "VTAH217": {
-   "status": "degreeworks",
+   "status": "complete",
    "submitted": "2026-10-30",
    "id": "VTAH217_Retired_20261030_101912"
   },
   "VTAH218": {
-   "status": "degreeworks",
+   "status": "complete",
    "submitted": "2026-10-30",
    "id": "VTAH218_Retired_20261030_102223"
   }
