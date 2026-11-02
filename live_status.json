@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-02T12:24:56Z",
+ "changed": "2026-11-02T20:28:29Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -23,17 +23,17 @@
    "id": "ALHT211_Updated_20261030_113129"
   },
   "ANTH201": {
-   "status": "banner",
+   "status": "degreeworks",
    "submitted": "2026-10-30",
    "id": "ANTH201_Retired_20261030_133923"
   },
   "ANTH202": {
-   "status": "banner",
+   "status": "degreeworks",
    "submitted": "2026-10-30",
    "id": "ANTH202_Retired_20261030_134214"
   },
   "ANTH205": {
-   "status": "banner",
+   "status": "degreeworks",
    "submitted": "2026-10-30",
    "id": "ANTH205_Retired_20261030_134603"
   },
