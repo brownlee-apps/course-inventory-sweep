@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-03T19:26:38Z",
+ "changed": "2026-11-05T17:42:24Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -51,6 +51,11 @@
    "status": "complete",
    "submitted": "2026-10-30",
    "id": "RLGN203_Updated_20261030_141608"
+  },
+  "TEED101": {
+   "status": "dean",
+   "submitted": "2026-11-05",
+   "id": "TEED101_Confirmed_20261105_110953"
   },
   "VTAH111": {
    "status": "complete",
