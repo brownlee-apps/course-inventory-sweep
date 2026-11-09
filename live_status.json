@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-09T19:32:05Z",
+ "changed": "2026-11-09T20:25:47Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -38,9 +38,34 @@
    "id": "ANTH205_Retired_20261030_134603"
   },
   "ART101": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-09",
    "id": "ART101_Updated_20261109_132809"
+  },
+  "ART102": {
+   "status": "dean",
+   "submitted": "2026-11-09",
+   "id": "ART102_Updated_20261109_142339"
+  },
+  "ART103": {
+   "status": "banner",
+   "submitted": "2026-11-09",
+   "id": "ART103_Updated_20261109_133659"
+  },
+  "ART104": {
+   "status": "banner",
+   "submitted": "2026-11-09",
+   "id": "ART104_Updated_20261109_134302"
+  },
+  "ART201": {
+   "status": "banner",
+   "submitted": "2026-11-09",
+   "id": "ART201_Updated_20261109_140347"
+  },
+  "ART202": {
+   "status": "banner",
+   "submitted": "2026-11-09",
+   "id": "ART202_Updated_20261109_141636"
   },
   "RLGN201": {
    "status": "complete",
