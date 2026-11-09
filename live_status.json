@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-09T20:25:47Z",
+ "changed": "2026-11-09T21:23:00Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -43,7 +43,7 @@
    "id": "ART101_Updated_20261109_132809"
   },
   "ART102": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-09",
    "id": "ART102_Updated_20261109_142339"
   },
@@ -60,12 +60,37 @@
   "ART201": {
    "status": "banner",
    "submitted": "2026-11-09",
-   "id": "ART201_Updated_20261109_140347"
+   "id": "ART201_Updated_20261109_144601"
   },
   "ART202": {
    "status": "banner",
    "submitted": "2026-11-09",
    "id": "ART202_Updated_20261109_141636"
+  },
+  "ART203": {
+   "status": "banner",
+   "submitted": "2026-11-09",
+   "id": "ART203_Confirmed_20261109_143023"
+  },
+  "ART204": {
+   "status": "banner",
+   "submitted": "2026-11-09",
+   "id": "ART204_Confirmed_20261109_143231"
+  },
+  "ART206": {
+   "status": "banner",
+   "submitted": "2026-11-09",
+   "id": "ART206_Updated_20261109_143620"
+  },
+  "ART210": {
+   "status": "banner",
+   "submitted": "2026-11-09",
+   "id": "ART210_Updated_20261109_144345"
+  },
+  "ART231": {
+   "status": "banner",
+   "submitted": "2026-11-09",
+   "id": "ART231_Retired_20261109_142614"
   },
   "RLGN201": {
    "status": "complete",
