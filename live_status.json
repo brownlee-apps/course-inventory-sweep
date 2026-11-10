@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-09T23:01:46Z",
+ "changed": "2026-11-10T15:29:01Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -58,7 +58,7 @@
    "id": "ART104_Updated_20261109_134302"
   },
   "ART201": {
-   "status": "banner",
+   "status": "catalog",
    "submitted": "2026-11-09",
    "id": "ART201_Updated_20261109_144601"
   },
@@ -68,17 +68,17 @@
    "id": "ART202_Updated_20261109_141636"
   },
   "ART203": {
-   "status": "banner",
+   "status": "catalog",
    "submitted": "2026-11-09",
    "id": "ART203_Confirmed_20261109_143023"
   },
   "ART204": {
-   "status": "banner",
+   "status": "catalog",
    "submitted": "2026-11-09",
    "id": "ART204_Confirmed_20261109_143231"
   },
   "ART206": {
-   "status": "banner",
+   "status": "catalog",
    "submitted": "2026-11-09",
    "id": "ART206_Updated_20261109_143620"
   },
@@ -93,9 +93,14 @@
    "id": "ART228_Updated_20261109_163457"
   },
   "ART231": {
-   "status": "banner",
+   "status": "catalog",
    "submitted": "2026-11-09",
    "id": "ART231_Retired_20261109_142614"
+  },
+  "ASLS101": {
+   "status": "dean",
+   "submitted": "2026-11-10",
+   "id": "ASLS101_Confirmed_20261110_092600"
   },
   "COMM203": {
    "status": "banner",
