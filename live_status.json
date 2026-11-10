@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-10T16:23:47Z",
+ "changed": "2026-11-10T19:13:24Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -103,7 +103,7 @@
    "id": "ASLS101_Confirmed_20261110_092600"
   },
   "ASLS102": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-10",
    "id": "ASLS102_Confirmed_20261110_092841"
   },
