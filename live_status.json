@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-11T15:47:28Z",
+ "changed": "2026-11-11T21:12:00Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -127,10 +127,40 @@
    "submitted": "2026-11-09",
    "id": "COMM203_Updated_20261109_161517"
   },
+  "FYSE100": {
+   "status": "dean",
+   "submitted": "2026-11-11",
+   "id": "FYSE100_Confirmed_20261111_141524"
+  },
   "GPHY101": {
    "status": "dean",
    "submitted": "2026-11-11",
    "id": "GPHY101_Updated_20261111_084423"
+  },
+  "GPHY102": {
+   "status": "dean",
+   "submitted": "2026-11-11",
+   "id": "GPHY102_Updated_20261111_135526"
+  },
+  "GPHY105": {
+   "status": "dean",
+   "submitted": "2026-11-11",
+   "id": "GPHY105_Updated_20261111_140134"
+  },
+  "HLPE221": {
+   "status": "dean",
+   "submitted": "2026-11-11",
+   "id": "HLPE221_Confirmed_20261111_142952"
+  },
+  "POSC201": {
+   "status": "dean",
+   "submitted": "2026-11-11",
+   "id": "POSC201_Updated_20261111_144140"
+  },
+  "POSC202": {
+   "status": "dean",
+   "submitted": "2026-11-11",
+   "id": "POSC202_Updated_20261111_144513"
   },
   "RLGN201": {
    "status": "complete",
