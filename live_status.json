@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-11T21:12:00Z",
+ "changed": "2026-11-11T23:09:38Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -98,17 +98,17 @@
    "id": "ART231_Retired_20261109_142614"
   },
   "ART246": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-11",
    "id": "ART246_Updated_20261111_083521"
   },
   "ART247": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-11",
    "id": "ART247_Updated_20261111_083830"
   },
   "ART250": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-11",
    "id": "ART250_Updated_20261111_082655"
   },
