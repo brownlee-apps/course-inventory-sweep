@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-12T15:40:28Z",
+ "changed": "2026-11-12T16:43:42Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -138,14 +138,14 @@
    "id": "GPHY101_Updated_20261111_084423"
   },
   "GPHY102": {
-   "status": "returned",
-   "submitted": "2026-11-11",
-   "id": "GPHY102_Updated_20261111_135526"
+   "status": "dean",
+   "submitted": "2026-11-12",
+   "id": "GPHY102_Updated_20261112_095449"
   },
   "GPHY105": {
    "status": "dean",
-   "submitted": "2026-11-11",
-   "id": "GPHY105_Updated_20261111_140134"
+   "submitted": "2026-11-12",
+   "id": "GPHY105_Updated_20261112_094637"
   },
   "HLPE221": {
    "status": "dean",
