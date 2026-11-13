@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-12T17:36:27Z",
+ "changed": "2026-11-13T15:45:05Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -127,8 +127,18 @@
    "submitted": "2026-11-09",
    "id": "COMM203_Updated_20261109_161517"
   },
-  "FYSE100": {
+  "ENGL256": {
+   "status": "banner",
+   "submitted": "2026-11-13",
+   "id": "ENGL256_Updated_20261113_092443"
+  },
+  "FREN101": {
    "status": "dean",
+   "submitted": "2026-11-13",
+   "id": "FREN101_Retired_20261113_093813"
+  },
+  "FYSE100": {
+   "status": "banner",
    "submitted": "2026-11-11",
    "id": "FYSE100_Confirmed_20261111_141524"
   },
@@ -148,19 +158,24 @@
    "id": "GPHY105_Updated_20261112_094637"
   },
   "HLPE221": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-11",
    "id": "HLPE221_Confirmed_20261111_142952"
   },
   "POSC201": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-11",
    "id": "POSC201_Updated_20261111_144140"
   },
   "POSC202": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-11",
    "id": "POSC202_Updated_20261111_144513"
+  },
+  "PSYC201": {
+   "status": "banner",
+   "submitted": "2026-11-13",
+   "id": "PSYC201_Updated_20261113_092712"
   },
   "RLGN201": {
    "status": "complete",
@@ -177,6 +192,21 @@
    "submitted": "2026-10-30",
    "id": "RLGN203_Updated_20261030_141608"
   },
+  "SPCH110": {
+   "status": "banner",
+   "submitted": "2026-11-13",
+   "id": "SPCH110_Updated_20261113_092003"
+  },
+  "SPCH115": {
+   "status": "dean",
+   "submitted": "2026-11-13",
+   "id": "SPCH115_Updated_20261113_092939"
+  },
+  "SPCH233": {
+   "status": "dean",
+   "submitted": "2026-11-13",
+   "id": "SPCH233_Retired_20261113_094254"
+  },
   "TEED101": {
    "status": "dean",
    "submitted": "2026-11-05",
@@ -186,6 +216,11 @@
    "status": "dean",
    "submitted": "2026-11-05",
    "id": "TEED103_Confirmed_20261105_124426"
+  },
+  "THTR101": {
+   "status": "dean",
+   "submitted": "2026-11-13",
+   "id": "THTR101_Updated_20261113_093148"
   },
   "VTAH111": {
    "status": "complete",
