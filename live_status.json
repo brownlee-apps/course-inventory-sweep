@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-13T17:36:01Z",
+ "changed": "2026-11-13T18:29:59Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -183,7 +183,7 @@
    "id": "MUSC111_Retired_20261113_101858"
   },
   "MUSC121": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-13",
    "id": "MUSC121_Retired_20261113_104522"
   },
@@ -218,7 +218,7 @@
    "id": "PSYC220_Updated_20261113_103000"
   },
   "PSYC290": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-13",
    "id": "PSYC290_Updated_20261113_104409"
   },
