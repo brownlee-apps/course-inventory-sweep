@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-13T15:45:05Z",
+ "changed": "2026-11-13T16:36:48Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -122,6 +122,11 @@
    "submitted": "2026-11-10",
    "id": "ASLS102_Confirmed_20261110_092841"
   },
+  "COMM170": {
+   "status": "banner",
+   "submitted": "2026-11-13",
+   "id": "COMM170_Updated_20261113_100519"
+  },
   "COMM203": {
    "status": "banner",
    "submitted": "2026-11-09",
@@ -133,9 +138,14 @@
    "id": "ENGL256_Updated_20261113_092443"
   },
   "FREN101": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-13",
    "id": "FREN101_Retired_20261113_093813"
+  },
+  "FREN102": {
+   "status": "banner",
+   "submitted": "2026-11-13",
+   "id": "FREN102_Retired_20261113_094226"
   },
   "FYSE100": {
    "status": "banner",
@@ -148,7 +158,7 @@
    "id": "GPHY101_Updated_20261111_084423"
   },
   "GPHY102": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-12",
    "id": "GPHY102_Updated_20261112_095449"
   },
@@ -161,6 +171,11 @@
    "status": "banner",
    "submitted": "2026-11-11",
    "id": "HLPE221_Confirmed_20261111_142952"
+  },
+  "MUSC111": {
+   "status": "banner",
+   "submitted": "2026-11-13",
+   "id": "MUSC111_Retired_20261113_101858"
   },
   "POSC201": {
    "status": "banner",
@@ -176,6 +191,21 @@
    "status": "banner",
    "submitted": "2026-11-13",
    "id": "PSYC201_Updated_20261113_092712"
+  },
+  "PSYC205": {
+   "status": "banner",
+   "submitted": "2026-11-13",
+   "id": "PSYC205_Updated_20261113_100508"
+  },
+  "PSYC206": {
+   "status": "banner",
+   "submitted": "2026-11-13",
+   "id": "PSYC206_Updated_20261113_101438"
+  },
+  "PSYC220": {
+   "status": "dean",
+   "submitted": "2026-11-13",
+   "id": "PSYC220_Updated_20261113_103000"
   },
   "RLGN201": {
    "status": "complete",
@@ -198,12 +228,12 @@
    "id": "SPCH110_Updated_20261113_092003"
   },
   "SPCH115": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-13",
    "id": "SPCH115_Updated_20261113_092939"
   },
   "SPCH233": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-13",
    "id": "SPCH233_Retired_20261113_094254"
   },
@@ -218,9 +248,19 @@
    "id": "TEED103_Confirmed_20261105_124426"
   },
   "THTR101": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-13",
    "id": "THTR101_Updated_20261113_093148"
+  },
+  "THTR105": {
+   "status": "banner",
+   "submitted": "2026-11-13",
+   "id": "THTR105_Updated_20261113_101710"
+  },
+  "THTR112": {
+   "status": "dean",
+   "submitted": "2026-11-13",
+   "id": "THTR112_Updated_20261113_103229"
   },
   "VTAH111": {
    "status": "complete",
