@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-13T16:36:48Z",
+ "changed": "2026-11-13T17:36:01Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -172,10 +172,20 @@
    "submitted": "2026-11-11",
    "id": "HLPE221_Confirmed_20261111_142952"
   },
+  "MUSC102": {
+   "status": "banner",
+   "submitted": "2026-11-13",
+   "id": "MUSC102_Retired_20261113_103720"
+  },
   "MUSC111": {
    "status": "banner",
    "submitted": "2026-11-13",
    "id": "MUSC111_Retired_20261113_101858"
+  },
+  "MUSC121": {
+   "status": "dean",
+   "submitted": "2026-11-13",
+   "id": "MUSC121_Retired_20261113_104522"
   },
   "POSC201": {
    "status": "banner",
@@ -203,9 +213,14 @@
    "id": "PSYC206_Updated_20261113_101438"
   },
   "PSYC220": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-13",
    "id": "PSYC220_Updated_20261113_103000"
+  },
+  "PSYC290": {
+   "status": "dean",
+   "submitted": "2026-11-13",
+   "id": "PSYC290_Updated_20261113_104409"
   },
   "RLGN201": {
    "status": "complete",
@@ -258,7 +273,7 @@
    "id": "THTR105_Updated_20261113_101710"
   },
   "THTR112": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-13",
    "id": "THTR112_Updated_20261113_103229"
   },
