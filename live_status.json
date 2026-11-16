@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-14T16:21:43Z",
+ "changed": "2026-11-16T20:32:44Z",
  "courses": {
   "ALHT102": {
    "status": "banner",
@@ -217,10 +217,25 @@
    "submitted": "2026-11-13",
    "id": "PSYC220_Updated_20261113_103000"
   },
+  "PSYC225": {
+   "status": "banner",
+   "submitted": "2026-11-16",
+   "id": "PSYC225_Confirmed_20261116_134832"
+  },
+  "PSYC230": {
+   "status": "dean",
+   "submitted": "2026-11-16",
+   "id": "PSYC230_Confirmed_20261116_135200"
+  },
   "PSYC290": {
    "status": "banner",
    "submitted": "2026-11-13",
    "id": "PSYC290_Updated_20261113_104409"
+  },
+  "PSYC299": {
+   "status": "banner",
+   "submitted": "2026-11-16",
+   "id": "PSYC299_Confirmed_20261116_140500"
   },
   "RLGN201": {
    "status": "complete",
@@ -236,6 +251,16 @@
    "status": "complete",
    "submitted": "2026-10-30",
    "id": "RLGN203_Updated_20261030_141608"
+  },
+  "SLGY201": {
+   "status": "dean",
+   "submitted": "2026-11-16",
+   "id": "SLGY201_Updated_20261116_140912"
+  },
+  "SLGY202": {
+   "status": "dean",
+   "submitted": "2026-11-16",
+   "id": "SLGY202_Updated_20261116_141250"
   },
   "SPCH110": {
    "status": "banner",
