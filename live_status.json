@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-17T18:37:44Z",
+ "changed": "2026-11-17T22:37:33Z",
  "courses": {
   "ALHT102": {
    "status": "complete",
@@ -253,7 +253,7 @@
    "id": "PSYC225_Confirmed_20261116_134832"
   },
   "PSYC230": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-16",
    "id": "PSYC230_Confirmed_20261116_135200"
   },
