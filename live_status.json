@@ -1,9 +1,9 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-16T23:16:05Z",
+ "changed": "2026-11-17T14:41:39Z",
  "courses": {
   "ALHT102": {
-   "status": "degreeworks",
+   "status": "complete",
    "submitted": "2026-10-30",
    "id": "ALHT102_Updated_20261030_100655"
   },
@@ -253,12 +253,12 @@
    "id": "RLGN203_Updated_20261030_141608"
   },
   "SLGY201": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-16",
    "id": "SLGY201_Updated_20261116_140912"
   },
   "SLGY202": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-16",
    "id": "SLGY202_Updated_20261116_141250"
   },
