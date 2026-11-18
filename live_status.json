@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-18T15:41:15Z",
+ "changed": "2026-11-18T16:45:32Z",
  "courses": {
   "ALHT102": {
    "status": "complete",
@@ -333,7 +333,7 @@
    "id": "THTR112_Updated_20261113_103229"
   },
   "THTR113": {
-   "status": "degreeworks",
+   "status": "catalog",
    "submitted": "2026-11-13",
    "id": "THTR113_Updated_20261113_124558"
   },
