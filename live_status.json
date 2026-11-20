@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-20T15:26:09Z",
+ "changed": "2026-11-20T17:27:18Z",
  "courses": {
   "ALHT102": {
    "status": "complete",
@@ -48,12 +48,12 @@
    "id": "ART102_Updated_20261109_142339"
   },
   "ART103": {
-   "status": "banner",
+   "status": "catalog",
    "submitted": "2026-11-09",
    "id": "ART103_Updated_20261109_133659"
   },
   "ART104": {
-   "status": "banner",
+   "status": "degreeworks",
    "submitted": "2026-11-09",
    "id": "ART104_Updated_20261109_134302"
   },
@@ -173,12 +173,12 @@
    "id": "ENGL256_Updated_20261113_092443"
   },
   "FREN101": {
-   "status": "banner",
+   "status": "degreeworks",
    "submitted": "2026-11-13",
    "id": "FREN101_Retired_20261113_093813"
   },
   "FREN102": {
-   "status": "banner",
+   "status": "degreeworks",
    "submitted": "2026-11-13",
    "id": "FREN102_Retired_20261113_094226"
   },
@@ -193,7 +193,7 @@
    "id": "GPHY101_Updated_20261111_084423"
   },
   "GPHY102": {
-   "status": "banner",
+   "status": "degreeworks",
    "submitted": "2026-11-12",
    "id": "GPHY102_Updated_20261112_095449"
   },
@@ -208,17 +208,17 @@
    "id": "HLPE221_Confirmed_20261111_142952"
   },
   "MUSC102": {
-   "status": "banner",
+   "status": "degreeworks",
    "submitted": "2026-11-13",
    "id": "MUSC102_Retired_20261113_103720"
   },
   "MUSC111": {
-   "status": "banner",
+   "status": "degreeworks",
    "submitted": "2026-11-13",
    "id": "MUSC111_Retired_20261113_101858"
   },
   "MUSC121": {
-   "status": "banner",
+   "status": "degreeworks",
    "submitted": "2026-11-13",
    "id": "MUSC121_Retired_20261113_104522"
   },
@@ -263,7 +263,7 @@
    "id": "PSYC206_Updated_20261113_101438"
   },
   "PSYC220": {
-   "status": "banner",
+   "status": "degreeworks",
    "submitted": "2026-11-13",
    "id": "PSYC220_Updated_20261113_103000"
   },
@@ -313,12 +313,12 @@
    "id": "SLGY202_Updated_20261116_141250"
   },
   "SPCH110": {
-   "status": "banner",
+   "status": "catalog",
    "submitted": "2026-11-13",
    "id": "SPCH110_Updated_20261113_092003"
   },
   "SPCH115": {
-   "status": "banner",
+   "status": "degreeworks",
    "submitted": "2026-11-13",
    "id": "SPCH115_Updated_20261113_092939"
   },
@@ -338,7 +338,7 @@
    "id": "TEED103_Confirmed_20261105_124426"
   },
   "THTR101": {
-   "status": "banner",
+   "status": "degreeworks",
    "submitted": "2026-11-13",
    "id": "THTR101_Updated_20261113_093148"
   },
@@ -348,7 +348,7 @@
    "id": "THTR105_Updated_20261113_101710"
   },
   "THTR112": {
-   "status": "banner",
+   "status": "catalog",
    "submitted": "2026-11-13",
    "id": "THTR112_Updated_20261113_103229"
   },
@@ -376,6 +376,16 @@
    "status": "dean",
    "submitted": "2026-11-20",
    "id": "THTR131_Confirmed_20261120_084823"
+  },
+  "THTR153": {
+   "status": "dean",
+   "submitted": "2026-11-20",
+   "id": "THTR153_Updated_20261120_105659"
+  },
+  "THTR154": {
+   "status": "dean",
+   "submitted": "2026-11-20",
+   "id": "THTR154_Updated_20261120_110709"
   },
   "VTAH111": {
    "status": "complete",
