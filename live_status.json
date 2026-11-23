@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-20T22:18:51Z",
+ "changed": "2026-11-23T14:46:17Z",
  "courses": {
   "ALHT102": {
    "status": "complete",
@@ -358,7 +358,7 @@
    "id": "THTR113_Updated_20261113_124558"
   },
   "THTR114": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-20",
    "id": "THTR114_Retired_20261120_080301"
   },
@@ -373,7 +373,7 @@
    "id": "THTR120_Confirmed_20261120_083823"
   },
   "THTR131": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-20",
    "id": "THTR131_Confirmed_20261120_084823"
   },
@@ -383,7 +383,7 @@
    "id": "THTR153_Updated_20261120_105659"
   },
   "THTR154": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-20",
    "id": "THTR154_Updated_20261120_110709"
   },
@@ -418,7 +418,7 @@
    "id": "THTR212_Confirmed_20261120_133751"
   },
   "THTR213": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-20",
    "id": "THTR213_Retired_20261120_134258"
   },
@@ -433,7 +433,7 @@
    "id": "THTR215_Confirmed_20261120_135520"
   },
   "THTR216": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-20",
    "id": "THTR216_Retired_20261120_141250"
   },
