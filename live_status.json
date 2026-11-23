@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-23T16:41:49Z",
+ "changed": "2026-11-23T17:41:47Z",
  "courses": {
   "ALHT102": {
    "status": "complete",
@@ -48,12 +48,12 @@
    "id": "ART102_Updated_20261109_142339"
   },
   "ART103": {
-   "status": "catalog",
+   "status": "complete",
    "submitted": "2026-11-09",
    "id": "ART103_Updated_20261109_133659"
   },
   "ART104": {
-   "status": "catalog",
+   "status": "complete",
    "submitted": "2026-11-09",
    "id": "ART104_Updated_20261109_134302"
   },
@@ -122,25 +122,40 @@
    "submitted": "2026-11-10",
    "id": "ASLS102_Confirmed_20261110_092841"
   },
+  "CJUS101": {
+   "status": "banner",
+   "submitted": "2026-11-23",
+   "id": "CJUS101_Updated_20261123_111323"
+  },
   "CJUS172": {
    "status": "banner",
-   "submitted": "2026-11-17",
-   "id": "CJUS172_Confirmed_20261117_094818"
+   "submitted": "2026-11-23",
+   "id": "CJUS172_Confirmed_20261123_110549"
+  },
+  "CJUS201": {
+   "status": "banner",
+   "submitted": "2026-11-23",
+   "id": "CJUS201_Updated_20261123_111204"
   },
   "CJUS202": {
-   "status": "dean",
-   "submitted": "2026-11-17",
-   "id": "CJUS202_Confirmed_20261117_095135"
+   "status": "banner",
+   "submitted": "2026-11-23",
+   "id": "CJUS202_Confirmed_20261123_111852"
+  },
+  "CJUS204": {
+   "status": "banner",
+   "submitted": "2026-11-23",
+   "id": "CJUS204_Updated_20261123_111651"
   },
   "CJUS232": {
    "status": "dean",
-   "submitted": "2026-11-17",
-   "id": "CJUS232_Confirmed_20261117_095634"
+   "submitted": "2026-11-23",
+   "id": "CJUS232_Confirmed_20261123_113717"
   },
   "CJUS240": {
    "status": "dean",
-   "submitted": "2026-11-17",
-   "id": "CJUS240_Confirmed_20261117_095840"
+   "submitted": "2026-11-23",
+   "id": "CJUS240_Confirmed_20261123_113936"
   },
   "CJUS271": {
    "status": "dean",
@@ -161,6 +176,11 @@
    "status": "banner",
    "submitted": "2026-11-09",
    "id": "COMM203_Updated_20261109_161517"
+  },
+  "COSM111": {
+   "status": "dean",
+   "submitted": "2026-11-23",
+   "id": "COSM111_Confirmed_20261123_111630"
   },
   "CTEC130": {
    "status": "dean",
@@ -193,7 +213,7 @@
    "id": "GPHY101_Updated_20261111_084423"
   },
   "GPHY102": {
-   "status": "catalog",
+   "status": "complete",
    "submitted": "2026-11-12",
    "id": "GPHY102_Updated_20261112_095449"
   },
@@ -263,7 +283,7 @@
    "id": "PSYC206_Updated_20261113_101438"
   },
   "PSYC220": {
-   "status": "catalog",
+   "status": "complete",
    "submitted": "2026-11-13",
    "id": "PSYC220_Updated_20261113_103000"
   },
@@ -313,7 +333,7 @@
    "id": "SLGY202_Updated_20261116_141250"
   },
   "SPCH110": {
-   "status": "catalog",
+   "status": "complete",
    "submitted": "2026-11-13",
    "id": "SPCH110_Updated_20261113_092003"
   },
@@ -338,7 +358,7 @@
    "id": "TEED103_Confirmed_20261105_124426"
   },
   "THTR101": {
-   "status": "catalog",
+   "status": "complete",
    "submitted": "2026-11-13",
    "id": "THTR101_Updated_20261113_093148"
   },
