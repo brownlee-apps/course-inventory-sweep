@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-24T17:35:03Z",
+ "changed": "2026-11-24T22:40:57Z",
  "courses": {
   "ALHT102": {
    "status": "complete",
@@ -251,6 +251,81 @@
    "status": "dean",
    "submitted": "2026-11-24",
    "id": "CTEC299_Updated_20261124_110442"
+  },
+  "CULA100": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA100_Confirmed_20261124_160018"
+  },
+  "CULA110": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA110_Confirmed_20261124_155724"
+  },
+  "CULA115": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA115_Confirmed_20261124_155831"
+  },
+  "CULA120": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA120_Confirmed_20261124_155841"
+  },
+  "CULA125": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA125_Confirmed_20261124_160207"
+  },
+  "CULA130": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA130_Confirmed_20261124_160245"
+  },
+  "CULA140": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA140_Confirmed_20261124_160321"
+  },
+  "CULA150": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA150_Confirmed_20261124_160348"
+  },
+  "CULA160": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA160_Updated_20261124_160417"
+  },
+  "CULA170": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA170_Confirmed_20261124_160446"
+  },
+  "CULA180": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA180_Confirmed_20261124_160511"
+  },
+  "CULA200": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA200_Confirmed_20261124_160539"
+  },
+  "CULA210": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA210_Confirmed_20261124_160606"
+  },
+  "CULA217": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA217_Updated_20261124_160630"
+  },
+  "CULA235": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CULA235_Updated_20261124_160656"
   },
   "ENGL256": {
    "status": "banner",
