@@ -20,10 +20,12 @@ Usage:
   python3 fetch_status.py --courses courses.txt --out live_status.json --from-json SUBMISSIONS.json   (tests)
 
 --dry-run includes Test Runs, prints the counts, and writes nothing. It shows the key and the parsing work before any
-live report exists. The script writes the file only when some course's status or date changed, and then sets
+live report exists. When Jotform fails a request (an HTTP error, a dropped connection, or an answer that is not a list
+of submissions), the script waits and tries again, three tries in all (November 24, 2026), and stops only when every
+try fails. The script writes the file only when some course's status or date changed, and then sets
 changed=true in $GITHUB_OUTPUT so the workflow commits it.
 """
-import argparse, datetime, json, os, re, sys, urllib.error, urllib.parse, urllib.request
+import argparse, datetime, http.client, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 from collections import Counter
 
 FORM_ID = os.environ.get("JOTFORM_FORM_ID", "262822849097066")
@@ -44,6 +46,9 @@ STATUS_MAP = {
 STATUSES = ["dean", "banner", "degreeworks", "catalog", "complete", "returned", "received"]
 # Refuse to write when this many courses vanish at once, since live submissions are not deleted in normal use
 MAX_DROP = 10
+# Seconds to wait before each new try when Jotform fails a request (three tries in all). The job has 5 minutes, and a
+# request waits at most 60 seconds, so the worst case stays near 3.5 minutes. SWEEP_RETRY_WAITS overrides it for tests.
+RETRY_WAITS = [float(x) for x in os.environ.get("SWEEP_RETRY_WAITS", "10,30").split(",") if x.strip()]
 
 
 def fail(msg):
@@ -51,21 +56,37 @@ def fail(msg):
     sys.exit(1)
 
 
+def get_page(key, offset):
+    """One page of submissions, or a short reason it could not be read (body is None then)."""
+    q = urllib.parse.urlencode({"limit": PAGE, "offset": offset, "orderby": "created_at"})
+    req = urllib.request.Request(f"{API_BASE}/form/{FORM_ID}/submissions?{q}",
+                                 headers={"APIKEY": key, "User-Agent": "BPCC-Course-Sweep-Status/1.0", "Accept": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            body = json.load(r)
+    except urllib.error.HTTPError as e:
+        return None, f"Jotform answered HTTP {e.code}. Check that JOTFORM_API_KEY is a current key with read access."
+    except (OSError, http.client.HTTPException, json.JSONDecodeError, ValueError) as e:
+        # URLError, timeouts, and a dropped connection (RemoteDisconnected) all land here
+        return None, f"Could not read from Jotform ({type(e).__name__})."
+    if not isinstance(body, dict) or body.get("responseCode") != 200 or not isinstance(body.get("content"), list):
+        return None, f"Jotform answered responseCode {body.get('responseCode') if isinstance(body, dict) else None}."
+    return body, ""
+
+
 def fetch_all(key):
     subs, offset = [], 0
     while True:
-        q = urllib.parse.urlencode({"limit": PAGE, "offset": offset, "orderby": "created_at"})
-        req = urllib.request.Request(f"{API_BASE}/form/{FORM_ID}/submissions?{q}",
-                                     headers={"APIKEY": key, "User-Agent": "BPCC-Course-Sweep-Status/1.0", "Accept": "application/json"})
-        try:
-            with urllib.request.urlopen(req, timeout=60) as r:
-                body = json.load(r)
-        except urllib.error.HTTPError as e:
-            fail(f"Jotform answered HTTP {e.code}. Check that JOTFORM_API_KEY is a current key with read access.")
-        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as e:
-            fail(f"Could not read from Jotform ({type(e).__name__}).")
-        if body.get("responseCode") != 200 or not isinstance(body.get("content"), list):
-            fail(f"Jotform answered responseCode {body.get('responseCode')}.")
+        # Jotform now and then fails one request (run #666, November 23, 2026, 9:56 p.m. Central), so try again
+        # after a short wait before stopping. A run that stops writes nothing, and the next run picks up as usual.
+        for wait in RETRY_WAITS + [None]:
+            body, problem = get_page(key, offset)
+            if body is not None:
+                break
+            if wait is None:
+                fail(f"{problem} Tried {len(RETRY_WAITS) + 1} times.")
+            print(f"{problem} Trying again in {wait:g} seconds.", flush=True)
+            time.sleep(wait)
         page = body["content"]
         subs.extend(page)
         if len(page) < PAGE:
