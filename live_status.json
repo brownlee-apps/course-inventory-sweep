@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-24T16:40:18Z",
+ "changed": "2026-11-24T17:35:03Z",
  "courses": {
   "ALHT102": {
    "status": "complete",
@@ -200,7 +200,7 @@
   "CTEC155": {
    "status": "dean",
    "submitted": "2026-11-24",
-   "id": "CTEC155_Updated_20261124_102350"
+   "id": "CTEC155_Updated_20261124_105133"
   },
   "CTEC200": {
    "status": "dean",
@@ -231,6 +231,26 @@
    "status": "dean",
    "submitted": "2026-11-24",
    "id": "CTEC257_Updated_20261124_100526"
+  },
+  "CTEC279": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CTEC279_Updated_20261124_104429"
+  },
+  "CTEC287": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CTEC287_Updated_20261124_104944"
+  },
+  "CTEC290": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CTEC290_Updated_20261124_105720"
+  },
+  "CTEC299": {
+   "status": "dean",
+   "submitted": "2026-11-24",
+   "id": "CTEC299_Updated_20261124_110442"
   },
   "ENGL256": {
    "status": "banner",
