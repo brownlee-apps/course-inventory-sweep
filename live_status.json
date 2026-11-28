@@ -1,6 +1,6 @@
 {
  "source": "Jotform, Course Inventory Sweep Submission form",
- "changed": "2026-11-24T22:40:57Z",
+ "changed": "2026-11-28T02:12:36Z",
  "courses": {
   "ALHT102": {
    "status": "complete",
@@ -323,7 +323,7 @@
    "id": "CULA217_Updated_20261124_160630"
   },
   "CULA235": {
-   "status": "dean",
+   "status": "banner",
    "submitted": "2026-11-24",
    "id": "CULA235_Updated_20261124_160656"
   },
